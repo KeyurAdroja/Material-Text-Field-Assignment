@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn.muicss.com/mui-0.9.27/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+</head>
+<body class="mui-container">
+
+    <form class="mui-form">
+        <legend>Material Text Field Assignment</legend>
+
+        <div>
+            <input type="text" required>
+            <label>Input 1</label>
+         </div>
+
+            <div>
+                <textarea placeholder="Textarea"></textarea>
+            </div>
+    </form>
+    <button id="con" value="convert"> Convert</button>
+    <button id="clear" value="clear">Clear</button>
+    <script>
+        $(document).ready(function () {
+            $("#con").click(function () {
+                $('div').toggleClass('mui-textfield mui-textfield--float-label');
+                alert('conversion in proess')
+            });
+            $("#con").click(function () {
+                $('button').toggleClass('mui-btn mui-btn--raised');
+               
+            });
+        });
+    </script>
+    <script src="//cdn.muicss.com/mui-0.9.27/js/mui.min.js"></script>
+</body>
+</html>
