@@ -9,9 +9,9 @@
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-
+    <link href="StyleSheet.css" rel="stylesheet" />
 </head>
-<body class="mui-container">
+<body class="mui-container" id="body">
 
     <form class="mui-form">
         <legend>Material Text Field Assignment</legend>
@@ -31,12 +31,17 @@
         $(document).ready(function () {
             $("#con").click(function () {
                 $('div').toggleClass('mui-textfield mui-textfield--float-label');
+                $('body').toggleClass('gray');
+               
+               
+               
                 alert('conversion in proess')
             });
             $("#con").click(function () {
                 $('button').toggleClass('mui-btn mui-btn--raised');
                
             });
+            
         });
     </script>
     <script src="//cdn.muicss.com/mui-0.9.27/js/mui.min.js"></script>
